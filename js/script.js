@@ -58,11 +58,3 @@ $(function() {
         autoplaySpeed: 2000,
 	});
 });
-
-$(function() {
-	$('.rev-slider1').slick({
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 2000,
-	})
-}) 

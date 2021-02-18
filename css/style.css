@@ -282,6 +282,7 @@ form {
 
 .slider {
     margin-top: 50px;
+    outline: none;
 }
 
 .logo1 {
@@ -401,6 +402,15 @@ form {
 .footer-left-bottom-email {
     display: flex;
     margin: 0 0 10px 0;
+}
+
+.numero-tel {
+    text-decoration: none;
+    color: #212529;
+}
+
+.numero-tel:hover {
+    color: #212529;
 }
 
 @media (max-width: 1400px) {
