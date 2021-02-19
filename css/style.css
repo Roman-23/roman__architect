@@ -121,6 +121,48 @@ nav .mainMenu .closeMenu , .icons i {
 .fa-instagram:hover {color: rgb(255, 0, 191);}
 .fa-github:hover {color: rgb(255, 123, 0);}
 
+.header-bottom {
+    background-image: url(../img/header-bottom-image.jpg); 
+    height: 650px;
+}
+
+.header-bottom-8 {
+    text-align: center;
+}
+
+.header-bottom-8 h2 {
+    font-family: serif;
+    font-size: 50px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-top: 150px;
+}
+
+.header-bottom-8 h3 {
+    font-family: serif;
+    font-size: 38px;
+    margin: 60px 0 70px 0;
+}
+
+.header-bottom-a-contact {
+    padding: 20px 100px 20px 100px;
+    background: white;
+    color: black;
+    text-decoration: none;
+    background-color: rgba(0, 0, 0, 0.0);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+}
+
+.header-bottom-a-contact:hover {
+    text-decoration: none;
+    color: black;
+    background: #6c4327;
+}
+
 /*FIN HEADER*/
 /*MAIN*/
 
@@ -293,6 +335,11 @@ form {
     float: left;
 }
 
+.logo2 {
+    float: right;
+    margin-top: 25px;
+}
+
 /*FIN INDEX-CONTACT.HTML*/
 /*main*/
 
@@ -417,6 +464,35 @@ form {
     .footer-left-top h3 {
         font-size: 22px;
     }
+    .header-bottom-8 h2 {
+        font-family: serif;
+        font-size: 40px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-top: 40px;
+    }
+    .header-bottom-8 h3 {
+        font-family: serif;
+        font-size: 30px;
+        margin: 40px 0 70px 0;
+    }
+
+    .header-bottom-a-contact {
+        padding: 20px 100px 20px 100px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 10px 0 0;
+    }
+    .header-bottom {
+        background-image: url(../img/header-bottom-image.jpg); 
+        height: 467px;
+    }
 }
 @media (max-width: 1200px) {
     .input-form {
@@ -524,6 +600,36 @@ form {
     .slider-1px {
         margin: auto;
     }
+    .logo2 {
+        margin-top: 0px;
+    }
+    .header-bottom-8 h2 {
+        font-family: serif;
+        font-size: 35px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-top: 50px;
+    }
+
+    .header-bottom-8 h3 {
+        font-family: serif;
+        font-size: 25px;
+        margin: 60px 0 70px 0;
+    }
+
+    .header-bottom-a-contact {
+        padding: 20px 100px 20px 100px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 10px 0 0;
+    }
+
 }
 
 @media (max-width: 994px) {
@@ -600,6 +706,32 @@ form {
         width: 300px;
         height: 300px;
     }
+    .header-bottom-8 h2 {
+        font-family: serif;
+        font-size: 30px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-top: 50px;
+    }
+
+    .header-bottom-8 h3 {
+        font-family: serif;
+        font-size: 20px;
+        margin: 60px 0 70px 0;
+    }
+
+    .header-bottom-a-contact {
+        padding: 20px 100px 20px 100px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0 10px 0 0;
+    }
 }
 @media(max-width: 991px) {
     .slider-1px {
@@ -639,6 +771,31 @@ form {
     .slider-12px {
         float: left;
         margin: auto;
+    }
+    .header-bottom-8 h2 {
+        font-family: serif;
+        font-size: 27px;
+        font-weight: bold;
+        margin-top: 10px;
+        margin-top: 50px;
+    }
+    .header-bottom-8 h3 {
+        font-family: serif;
+        font-size: 20px;
+        margin: 40px 0 40px 0;
+    }
+    .header-bottom-a-contact {
+        padding: 20px 100px 20px 100px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: block;
     }
 }
 @media (max-width: 767px) {
@@ -721,6 +878,12 @@ form {
     }
 }
 
+@media (max-width: 439px) {
+    .header-bottom {
+        height: 520px;
+    }
+}
+
 @media (max-width: 421px) {
     #map {
         width: 370px;
@@ -729,7 +892,7 @@ form {
 
 @media (max-width: 398px) {
     .slider img{
-        width: 380px;
+        width: : 380px;
     }
 }
 
@@ -754,6 +917,22 @@ form {
 @media (max-width: 392px) {
     #map {
         width: 340px;
+    }
+}
+
+@media (max-width: 367px) {
+    .header-bottom-a-contact {
+        padding: 20px 50px 20px 50px;
+        background: white;
+        color: black;
+        text-decoration: none;
+        background-color: rgba(0, 0, 0, 0.0);
+        border: 2px solid black;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 15px;
+        display: block;
     }
 }
 
