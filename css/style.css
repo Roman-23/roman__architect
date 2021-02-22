@@ -116,7 +116,7 @@ nav .mainMenu .closeMenu , .icons i {
     font-size: 2rem;
     cursor: pointer;
 }
-.fa-facebook:hover {color: rgb(0, 110, 255);}
+.fa-facebook:hover {color: rgb(6, 6, 6);}
 .fa-twitter:hover {color: rgb(86, 154, 243);}
 .fa-instagram:hover {color: rgb(255, 0, 191);}
 .fa-github:hover {color: rgb(255, 123, 0);}
@@ -464,6 +464,49 @@ form {
     color: #212529;
 }
 
+.back-to-top {
+    position: fixed;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50%;
+    background: black;
+    display: none;
+    transition: 0.4s;
+}
+
+.back-to-top::before,
+.back-to-top::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.back-to-top::before {
+    width: 5px;
+    height: 20px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: white;
+}
+
+.back-to-top::after {
+    width: 15px;
+    height: 15px;
+    transform: translate(-50%, -50%) rotate(45deg);
+    border-top: 5px solid white;
+    border-left: 5px solid white;
+}
+
+.back-to-top.active {
+    bottom: 40px;
+    display: block;
+}
+
 @media (max-width: 1400px) {
     .footer-left-top h3 {
         font-size: 22px;
@@ -633,7 +676,7 @@ form {
         font-weight: bold;
         margin: 0 10px 0 0;
     }
-
+    .fa-facebook:hover {color: rgb(0, 110, 255);}
 }
 
 @media (max-width: 994px) {
@@ -743,13 +786,10 @@ form {
         margin: 0;
         margin-left: 150px;
     }
-}
-
-@media (max-width: 800px) {
-    .header-bottom {
-
+    .header-bottom-8 h3 {
+        margin-bottom: 90px;
     }
-} 
+}
 
 @media (max-width: 777px) {
     nav {

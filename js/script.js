@@ -25,14 +25,14 @@ function initMap() {
 		center: pos,
 		zoom: 17,
 	};
+    
+    let myMap = new google.maps.Map(document.getElementById("map"), opt);
 
-	let myMap = new google.maps.Map(document.getElementById("map"), opt);
-
-	let marker = new google.maps.Marker({
-		position: pos,
-		map: myMap,
-	});
-}
+    let marker = new google.maps.Marker({
+    	position: pos,
+    	map: myMap,
+    });
+} 
 
 let mainMenu = document.querySelector('.mainMenu');
 let openMenu = document.querySelector('.openMenu');
@@ -60,3 +60,17 @@ $(function() {
         cssEase: 'linear'
 	});
 });
+
+$('.back-to-top').click(function() {
+    $('body').animate({'scrollTop': 0}, 1000);
+    $('html').animate({'scrollTop': 0}, 1000);
+});
+
+$(window).scroll(function() {
+	if($(window).scrollTop() > 200){
+		$('.back-to-top').addClass('active');
+	}
+	else {
+		$('.back-to-top').removeClass('active');
+	}
+})
