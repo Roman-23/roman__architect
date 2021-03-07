@@ -25,31 +25,30 @@ function initMap() {
 		center: pos,
 		zoom: 17,
 	};
-    
-    let myMap = new google.maps.Map(document.getElementById("map"), opt);
 
-    let marker = new google.maps.Marker({
-    	position: pos,
-    	map: myMap,
-    });
-} 
+	let myMap = new google.maps.Map(document.getElementById("map"), opt);
+
+	let marker = new google.maps.Marker({
+		position: pos,
+		map: myMap,
+	});
+}
 
 let mainMenu = document.querySelector('.mainMenu');
-let openMenu = document.querySelector('.openMenu');
 let closeMenu = document.querySelector('.closeMenu');
+let openMenu = document.querySelector('.openMenu');
 
-openMenu.addEventListener('click', show);
+openMenu.addEventListener('click', open);
 closeMenu.addEventListener('click', close);
 
-function show() {
-	mainMenu.style.display = 'flex';
-	mainMenu.style.top = '0';
+function open() {
+	mainMenu.style.display = "flex";
+	mainMenu.style.top = "0";
 }
 
 function close() {
-	mainMenu.style.top = '-100%';
+	mainMenu.style.top = "-100%";
 }
-
 
 $(function() {
 	$('.rev-slider').slick({
@@ -62,15 +61,25 @@ $(function() {
 });
 
 $('.back-to-top').click(function() {
-    $('body').animate({'scrollTop': 0}, 1000);
-    $('html').animate({'scrollTop': 0}, 1000);
+	$('body').animate({'scrollTop': 0}, 1000);
+	$('html').animate({'scrollTop': 0}, 1000);
 });
 
 $(window).scroll(function() {
-	if($(window).scrollTop() > 200){
+	if($(window).scrollTop() > 200) {
 		$('.back-to-top').addClass('active');
 	}
 	else {
 		$('.back-to-top').removeClass('active');
 	}
-})
+});
+
+document.getElementById('myslide').onmousemove = function(event) {
+	let x = event.offsetX;
+	console.log(x);
+	document.getElementById('myslide2').style.width = x + 'px';
+}
+
+document.getElementById('myslide').onmouseleave = function(event) {
+	document.getElementById('myslide2').style.width = '150px';
+}
