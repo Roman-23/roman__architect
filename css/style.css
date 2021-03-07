@@ -54,6 +54,7 @@ body {
     color: white;
     font-size: 20px;
     word-spacing: 7px;
+    transition: all;
 }
 
 .a-top-header:hover {
@@ -115,6 +116,7 @@ nav .openMenu {
 nav .mainMenu .closeMenu , .icons i {
     font-size: 2rem;
     cursor: pointer;
+
 }
 .fa-facebook:hover {color: rgb(6, 6, 6);}
 .fa-twitter:hover {color: rgb(86, 154, 243);}
@@ -170,6 +172,35 @@ nav .mainMenu .closeMenu , .icons i {
 /*FIN HEADER*/
 /*MAIN*/
 
+.NousTravauxTop {
+    background: #f1f1f1;
+    padding-bottom: 80px;
+}
+
+.text-nous-travaux {
+    text-align: center;
+}
+
+.text-nous-travaux .col-md-12 h2 {
+    margin: 50px 0 50px 0;
+    font-size: 40px;
+}
+
+#myslide {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+#myslide1, #myslide2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: hidden;
+}
 
 /*INDEX-CONTACT.HTML*/
 .contact {
@@ -473,8 +504,8 @@ form {
     border: 1px solid black;
     border-radius: 50%;
     background: black;
-    display: none;
     transition: 0.4s;
+    display: none;
 }
 
 .back-to-top::before,
