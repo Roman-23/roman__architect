@@ -20,36 +20,36 @@ $(document).ready(function() {
 });
 
 function initMap() {
-	let pos = {lat: 48.8398316494406, lng: 2.481526103728035};
-	let opt = {
-		center: pos,
-		zoom: 17,
-	};
+    let pos = {lat: 48.8398316494406,lng: 2.481526103728035};
+    let opt = {
+    	center: pos,
+    	zoom: 17,
+    };
 
-	let myMap = new google.maps.Map(document.getElementById("map"), opt);
+    let myMap = new google.maps.Map(document.getElementById("map"), opt);
 
 	let marker = new google.maps.Marker({
 		position: pos,
 		map: myMap,
-	});
+	})
 }
 
 let mainMenu = document.querySelector('.mainMenu');
 let closeMenu = document.querySelector('.closeMenu');
 let openMenu = document.querySelector('.openMenu');
 
-openMenu.addEventListener('click', open);
 closeMenu.addEventListener('click', close);
+openMenu.addEventListener('click', open);
 
 function open() {
-	mainMenu.style.display = "flex";
+	mainMenu.style.display = "block";
 	mainMenu.style.top = "0";
 }
 
 function close() {
 	mainMenu.style.top = "-100%";
 }
-
+ 
 $(function() {
 	$('.rev-slider').slick({
         arrows: false,
@@ -73,13 +73,3 @@ $(window).scroll(function() {
 		$('.back-to-top').removeClass('active');
 	}
 });
-
-document.getElementById('myslide').onmousemove = function(event) {
-	let x = event.offsetX;
-	console.log(x);
-	document.getElementById('myslide2').style.width = x + 'px';
-}
-
-document.getElementById('myslide').onmouseleave = function(event) {
-	document.getElementById('myslide2').style.width = '150px';
-}

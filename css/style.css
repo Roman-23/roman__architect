@@ -174,7 +174,8 @@ nav .mainMenu .closeMenu , .icons i {
 
 .NousTravauxTop {
     background: #f1f1f1;
-    padding-bottom: 80px;
+    border-bottom-left-radius: 400px 150px;
+    border-bottom-right-radius: 400px 150px;
 }
 
 .text-nous-travaux {
@@ -187,19 +188,24 @@ nav .mainMenu .closeMenu , .icons i {
 }
 
 #myslide {
-    width: 300px;
-    height: 300px;
+    width: 500px;
     position: relative;
     overflow: hidden;
+    margin-bottom: 100px;
 }
 
-#myslide1, #myslide2 {
-    width: 300px;
-    height: 300px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    overflow: hidden;
+.myslide-top {
+    display: flex;
+}
+
+.myslide-bottom {
+    display: flex;
+}
+
+#myslide3, #myslide4 {
+    width: 500px;
+    height: 400px;
+    margin-left: 50px;
 }
 
 /*INDEX-CONTACT.HTML*/
@@ -707,7 +713,28 @@ form {
         font-weight: bold;
         margin: 0 10px 0 0;
     }
-    .fa-facebook:hover {color: rgb(0, 110, 255);}
+    .fa-facebook:hover {
+        color: rgb(0, 110, 255);
+    }
+    .myslide-top {
+        display: block;
+        text-align: center;
+    }
+    .myslide-bottom {
+        display: block;
+    }
+    .col-md-myslide-top {
+        margin: auto;
+    }
+    .col-md-myslide-bottom {
+        margin: auto;
+    }
+}
+
+@media (max-width: 1199px) {
+    .slick-track {
+        display: block;
+    }
 }
 
 @media (max-width: 994px) {
@@ -820,6 +847,12 @@ form {
     .header-bottom-8 h3 {
         margin-bottom: 90px;
     }
+    .col-md-myslide-top {
+        margin-left: 100px;
+    }
+    .col-md-myslide-bottom {
+        margin-left: 100px;
+    }
 }
 
 @media (max-width: 777px) {
@@ -899,6 +932,12 @@ form {
     .slider-1px {
         margin-left: 0px;
     }
+    .col-md-myslide-top {
+        margin-left: 0px;
+    }
+    .col-md-myslide-bottom {
+        margin-left: 0px;
+    }
 }
 @media (max-width: 560px) {
     .contact-input {
@@ -914,6 +953,16 @@ form {
     .header-left h2 {
         font-size: 45px;
     }
+    #myslide3 {
+        max-width: 350px;
+        height: 350px;
+        margin-left: 90px;
+    }
+    #myslide4 {
+        max-width: 350px;
+        height: 350px;
+        margin-left: 150px;
+    }
 }
 @media (max-width: 560px) {
     form {
@@ -925,14 +974,83 @@ form {
         width: 490px;
     }
 }
+@media (max-width: 530px) {
+    #myslide3 {
+        max-width: 300px;
+        height: 300px;
+        margin-left: 110px;
+    }
+    #myslide4 {
+        max-width: 300px;
+        height: 300px;
+        margin-left: 200px;
+    }
+}
 @media(max-width: 516px) {
     #map {
         width: 460px;
     }
 }
+@media(max-width: 510px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 115px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+        margin-top: -20px;
+    }
+}
+@media(max-width: 494px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 110px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
+@media(max-width: 488px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 100px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
 @media(max-width: 486px) {
     #map {
         width: 420px;
+    }
+}
+@media(max-width: 470px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 90px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
     }
 }
 @media (max-width: 450px) {
@@ -941,9 +1059,51 @@ form {
         margin-top: 12px;
     }
 }
+@media(max-width: 448px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 80px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
 @media(max-width: 446px) {
     #map {
         width: 380px;
+    }
+}
+@media(max-width: 424px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 70px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
+@media(max-width: 404px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 60px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
     }
 }
 @media(max-width: 396px) {
@@ -951,9 +1111,35 @@ form {
         width: 340px;
     }
 }
+@media(max-width: 384px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 50px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
 @media(max-width: 366px) {
     #map {
         width: 300px;
+    }
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 40px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
     }
 }
 @media (max-width: 350px) {
@@ -961,55 +1147,74 @@ form {
         width: 260px;
     }
 }
-
+@media(max-width: 342px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 30px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
 @media (max-width: 439px) {
     .header-bottom {
         height: 550px;
     }
 }
-
+@media(max-width: 330px) {
+    #myslide3 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 25px;
+        float: left;
+    }
+    #myslide4 {
+        max-width: 250px;
+        height: 250px;
+        margin-left: 250px;
+        float: left;
+    }
+}
 @media (max-width: 421px) {
     #map {
         width: 370px;
     }
 }
-
 @media (max-width: 398px) {
     .slider img{
         width: : 380px;
     }
 }
-
 @media (max-width: 380px) {
     .slider img{
         width: 360px; 
     }
 }
-
 @media (max-width: 360px) {
     .slider img{
         width: 340px;
     } 
 }
-
 @media (max-width: 346px) {
     .header-bottom {
         height: 570px;
     }
 }
-
 @media (max-width: 340px) {
     .slider img{
         width: 320px;
     } 
 }
-
 @media (max-width: 392px) {
     #map {
         width: 340px;
     }
 }
-
 @media (max-width: 367px) {
     .header-bottom-a-contact {
         padding: 20px 50px 20px 50px;
@@ -1025,16 +1230,43 @@ form {
         display: block;
     }
 }
-
 @media (max-width: 360px) {
     #map {
         width: 295px;
     }
 }
-
 @media (max-width: 327px) {
     .header-bottom {
         height: 600px;
     }
 }
 /*FIN FOOTER*/
+
+
+.Modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 11% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+}
+
+.close {
+    float: right;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
