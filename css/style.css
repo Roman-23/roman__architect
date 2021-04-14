@@ -79,50 +79,6 @@ body {
     color: black;
 }
 
-.facebook-haeder:hover {
-    color: black;
-}
-
-nav {
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
-    display: none;
-}
-nav .mainMenu {
-    display: flex;
-    list-style: none;
-    text-align: center;
-    transition: all 1s ease;
-}
-nav .mainMenu li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #fff;
-    font-size: 1.5rem;
-}
-nav .mainMenu li a:hover {
-    background: rgb(255,94,0);
-}
-nav .openMenu {
-    font-size: 2rem;
-    margin: -3px;
-    display: none;
-    cursor: pointer;
-    transition: top 1s ease;
-}
-nav .mainMenu .closeMenu , .icons i {
-    font-size: 2rem;
-    cursor: pointer;
-
-}
-.fa-facebook:hover {color: rgb(6, 6, 6);}
-.fa-twitter:hover {color: rgb(86, 154, 243);}
-.fa-instagram:hover {color: rgb(255, 0, 191);}
-.fa-github:hover {color: rgb(255, 123, 0);}
-
 .header-bottom {
     background-image: url(../img/header-bottom-image.jpg); 
     height: 650px;
@@ -544,6 +500,67 @@ form {
     display: block;
 }
 
+.burger-menu {
+    display: none;
+}
+
+.burger {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+}
+
+.burger-menu-content {
+    display: none;
+}
+
+.contact1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,1);
+    margin-top: 0px;
+}
+
+.contact-content {
+    background-color: black;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+    text-align: center;
+}
+
+.close {
+    float: right;
+    color: #aaa;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px 40px 0 0;
+}
+
+.burger-button {
+    line-height: 50px;
+    padding-top: 30px;
+}
+
+.burger-button a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger-button a:hover {
+    color: white;
+}
+
 @media (max-width: 1400px) {
     .footer-left-top h3 {
         font-size: 22px;
@@ -579,6 +596,10 @@ form {
     }
 }
 @media (max-width: 1200px) {
+    .burger-menu {
+        display: block;
+        float: right;
+    }
     .input-form {
         width: 300px;
     }
@@ -605,39 +626,6 @@ form {
     }
     .footer-left-top h3 {
         font-size: 25px;
-    }
-    nav {
-        display: block;
-    }
-    nav .mainMenu {
-        height: 100vh;
-        position: fixed;
-        top: 0;
-        right: 0;
-        left: 0;
-        z-index: 10;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: #000;
-        transition: top 1s ease;
-        display: none;
-    }
-    nav .mainMenu .closeMenu {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-
-    }
-    nav .openMenu {
-        display: block;
-        transition: top 1s ease;
-    }
-    nav .mainMenu li a:hover {
-        background: none;
-        color: rgb(255, 123, 0);
-        font-size: 1.6rem;
     }
     .header-right-a {
         display: none;
@@ -754,7 +742,7 @@ form {
     padding: 7px 60px 7px 60px;
     margin: 0 0 5px 0;
     }
-    .burger {
+    .burger-menu {
         display: block;
         float: right;
     }
@@ -855,9 +843,6 @@ form {
 }
 
 @media (max-width: 777px) {
-    nav {
-        float: right;
-    }
     .header-bottom {
         height: 550px;
     }
@@ -870,9 +855,6 @@ form {
 }
 
 @media (max-width: 768px) {
-    nav {
-        float: right;
-    }
     .form-message-br {
         display: block;
     }
@@ -912,6 +894,11 @@ form {
         font-weight: bold;
         margin-bottom: 15px;
         display: block;
+    }
+    .burger-button {
+        line-height: 50px;
+        padding-top: 30px;
+        margin-top: 30px;
     }
 }
 @media (max-width: 767px) {
@@ -1051,6 +1038,49 @@ form {
         margin-left: 250px;
         float: left;
     }
+    .contact {
+        display: none;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,1);
+        margin-top: 0px;
+    }
+    .contact-content {
+        background-color: black;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 500px;
+        height: 500px;
+        border: 2px solid black;
+        text-align: center;
+    }
+    .close {
+        float: right;
+        color: #aaa;
+        font-size: 50px;
+        font-weight: bold;
+        cursor: pointer;
+        margin: 20px 40px 0 0;
+    }
+
+    .burger-button {
+        line-height: 50px;
+        padding-top: 60px;
+    }
+    .burger-button a {
+        text-decoration: none;
+        color: white;
+        margin-right: 40px;
+    }
+    .burger-button a:hover {
+        color: white;
+    }
 }
 @media (max-width: 450px) {
     .header-left h2 {
@@ -1075,6 +1105,17 @@ form {
 @media(max-width: 446px) {
     #map {
         width: 380px;
+    }
+}
+@media(max-width: 440px) {
+    .burger-button a {
+        text-decoration: none;
+        color: white;
+        margin-right: 80px;
+    }
+    .burger-button {
+        line-height: 50px;
+        padding-top: 60px;
     }
 }
 @media(max-width: 424px) {
@@ -1105,6 +1146,13 @@ form {
         float: left;
     }
 }
+@media(max-width: 400px) {
+    .burger-button a {
+        text-decoration: none;
+        color: white;
+        margin-right: 120px;
+    }
+}
 @media(max-width: 396px) {
     #map {
         width: 340px;
@@ -1122,6 +1170,13 @@ form {
         height: 250px;
         margin-left: 250px;
         float: left;
+    }
+}
+@media(max-width: 370px) {
+    .burger-button a {
+        text-decoration: none;
+        color: white;
+        margin-right: 160px;
     }
 }
 @media(max-width: 366px) {
@@ -1158,6 +1213,13 @@ form {
         height: 250px;
         margin-left: 250px;
         float: left;
+    }
+}
+@media(max-width: 340px) {
+    .burger-button a {
+        text-decoration: none;
+        color: white;
+        margin-right: 180px;
     }
 }
 @media (max-width: 439px) {
@@ -1265,7 +1327,7 @@ form {
 .close {
     float: right;
     color: #aaa;
-    font-size: 28px;
+    font-size: 50px;
     font-weight: bold;
     cursor: pointer;
 }

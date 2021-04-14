@@ -33,22 +33,6 @@ function initMap() {
 		map: myMap,
 	})
 }
-
-let mainMenu = document.querySelector('.mainMenu');
-let closeMenu = document.querySelector('.closeMenu');
-let openMenu = document.querySelector('.openMenu');
-
-closeMenu.addEventListener('click', close);
-openMenu.addEventListener('click', open);
-
-function open() {
-	mainMenu.style.display = "block";
-	mainMenu.style.top = "0";
-}
-
-function close() {
-	mainMenu.style.top = "-100%";
-}
  
 $(function() {
 	$('.rev-slider').slick({
@@ -73,3 +57,21 @@ $(window).scroll(function() {
 		$('.back-to-top').removeClass('active');
 	}
 });
+
+let contact = document.getElementById('myContact');
+let btn = document.getElementById("myBtn");
+let span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+	contact.style.display = "block";
+}
+
+span.onclick = function() {
+	contact.style.display = "none";
+}
+
+window.onclick = function(event) {
+	if(event.target == contact) {
+		contact.style.display = "none";
+	}
+}
