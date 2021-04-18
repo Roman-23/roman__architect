@@ -562,6 +562,10 @@ form {
     color: white;
 }
 
+.contact {
+    display: block;
+}
+
 @media (max-width: 1400px) {
     .footer-left-top h3 {
         font-size: 22px;
@@ -1039,7 +1043,7 @@ form {
         margin-left: 250px;
         float: left;
     }
-    .contact {
+    /*.contact1 {
         display: none;
         position: fixed;
         z-index: 1;
@@ -1050,7 +1054,7 @@ form {
         overflow: auto;
         background-color: rgba(0,0,0,1);
         margin-top: 0px;
-    }
+    }*/
     .contact-content {
         background-color: black;
         margin: 15% auto;
